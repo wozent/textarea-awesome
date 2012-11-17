@@ -1,0 +1,133 @@
+body{
+	background-image: url(../static/background.jpg);
+	background-repeat: repeat;
+}
+
+#lucastext.container {
+	position: absolute;
+	margin-left: 100px;
+	margin-top: 40px;
+	width: 750px;
+	height: 250px;
+	background-color: rgba(47,119,160,0.81);
+}
+
+.contactclass { display: inline-block; }
+
+#letteri {
+	position: absolute;
+	font-family: 'light', Arial, sans-serif;
+	font-size: 80px;
+	margin-top: 127px;
+	margin-left: 140px;
+	color: rgba(255,255,255,1);
+	text-shadow: 0.05em 0.05em 0.1em #4a5532;
+	top;
+}
+
+#wordlucas {
+	position: absolute;
+	font-family: 'light', Arial, sans-serif;
+	font-size: 80px;
+	margin-top: 127px;
+	margin-left: 610px;
+	color: rgba(255,255,255,1);
+	text-shadow: 0.05em 0.05em 0.1em #4a5532;
+}
+
+#lucastext #main {
+	width: 700px;
+	position: absolute;
+	height: 200px;
+	border-top:25px rgba(256,256,256,0.2) solid;
+	border-left:25px rgba(256,256,256,0.2) solid;
+	border-right:25px rgba(256,256,256,0.2) solid;
+	border-bottom:25px rgba(256,256,256,0.2) solid;
+	background: url(../static/grid.png) repeat;
+	-webkit-transition: opacity 0.2s linear;
+	overflow: hidden;
+	-webkit-user-select: none;
+	-webkit-transform: translateZ(0);
+}
+
+
+#lucastext #text {
+	font-size: 100px;
+	line-height: 90px;
+	color: #fff;
+	text-align: center;
+	background-color: transparent;
+	width: 415px;
+	height: 200px;
+	text-overflow:ellipsis;
+	padding:65px 0px 0px 0px; 
+	margin-left: 55px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	border: none;
+	-webkit-appearance: none;
+	resize: none;
+	-webkit-user-select: text;
+	-webkit-touch-callout: none;
+	text-shadow: 0.05em 0.05em 0.1em #4a5532;
+	border: none;
+}
+
+#nav {
+	position: absolute;
+	width: 50px;
+	height: 200px;
+	margin-top: 320px;
+	margin-left: 120px;
+	color: #fff;
+	font-family: "light";
+	font-size: 30px;
+}
+
+a:link, a:active, a:visited {
+	text-decoration: none;
+	color: #7a7a7a;
+}
+
+
+a.meclass:hover {
+	color: #6492ca;
+	text-decoration: none;
+	font-family: "med";
+}
+
+a.messageclass:hover {
+	color: #4bc034;
+	text-decoration: none;
+	font-family: "med";
+}
+
+a.resumeclass:hover {
+	color: #efb628;
+	text-decoration: none;
+	font-family: "med";
+}
+
+a.contactclass:hover {
+	color: #e636e0;
+	text-decoration: none;
+	font-family: "med";
+}
+
+@font-face {
+	font-family: 'QuicksandDash';
+	src: url(Quicksand_Dash.otf);
+}
+@font-face {
+	font-family: 'light';
+	src: url(Gotham-XLight.otf);
+}
+@font-face {
+	font-family: 'med';
+	src: url(Gotham-Medium.otf);
+}
+
+#lucastext .chunkfive {
+	font: 100px/110px 'QuicksandDash', Arial, sans-serif;
+	letter-spacing: 0;
+}

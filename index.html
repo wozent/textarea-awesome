@@ -1,0 +1,37 @@
+<html>
+<head>
+	<script src="js/typography.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/randomlucas.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.float.js" type="text/javascript"></script>
+	
+	<link rel="stylesheet" href="style/lucastext.css" type="text/css" />
+	
+
+
+</head>
+<body>
+
+	<div id="lucastext" class="container">
+	<section id="main">
+		<textarea name="textarea" id="text" class="chunkfive" maxlength="15"></textarea>
+	</section></div>
+	<div id="letteri">i</div>
+	<div id="wordlucas">lucas</div>
+	<div id="nav">
+		<div id="me" class="e1"><a href="me" class="meclass">aboutMe</a></div>
+		<div id="message" class="e2"><a href="message" class="messageclass">blog</a></div>
+		<div id="resume" class="e3"><a href="resume" class="resumeclass">resume</a></div>
+		<div id="contact" class="e4"><a href="contact" id="following4" href="http://image.zhangxinxu.com/image/study/s/s256/mm1.jpg" class="contactclass">contact</a></div>
+	</div>
+	<script>randomLucas();</script>
+	<script>
+	$("#following4").powerFloat({
+    targetMode: "ajax",
+    targetAttr: "href",
+    hoverFollow: "y",
+    position: "6-8"
+});
+</script>
+	
+</body>
+</html>

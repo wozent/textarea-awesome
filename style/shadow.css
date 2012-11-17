@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* CSS Document */
+       		  
+       		  
+       	#zoom {
+			left: 123px;
+        	top: 400px;
+		}
+		  
+		#zoom2 {
+        	left: 500px;
+        	top: 300px;
+        }
+		  
+		#zoom3 {
+			left: <?php echo rand(1,1000); ?>px;
+        	top: <?php echo rand(1,1000); ?>px;
+		}  
+       		  
+       		  
+		  .zoomProps {	  
+				height: 240px;
+	            width: 230px;
+	            position:absolute;
+	            
+		  }
+	
+	
+          #zoomWrapper {
+	            height: 377px;
+	            width: 600px;
+	            overflow: hidden;
+     
+          }
+          
+         
+		  .polaroid {
+	
+				text-align: center;  
+				padding: 10px 10px 25px 10px;
+				background: #0e760b;
+				border: 1px solid #fff;
+				-moz-box-shadow: 0px 2px 15px #333;
+				-webkit-box-shadow:	0px 2px 15px #333;
+				border: 1px solid #dfdfdf;
+		    	border: 1px solid rgba(96,96,96,0.2);  
+				font-size:24px;
+				color:#ffffff;
+				padding-bottom:10px;
+				text-shadow:#333;
+		  }
+		  
+		  
+		  .upSky {
+		  
+				background: #81f673;
+				color:#1b6a0f;
+				opacity: 0.9;
+				
+			  
+		  }
+		  
+		  .welcome {
+		  
+				font-size:24px;
+				color:#FFF;
+		        text-shadow: 1px 1px 2px #363636;
+		        filter: dropshadow(color=#363636, offx=1, offy=1);
+        
+		  }

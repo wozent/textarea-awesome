@@ -1,0 +1,330 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'g_light';
+	src: url('../style/Gotham-Book.otf');
+} 
+
+/*
+@font-face {
+	font-family: 'g_huge';
+	src: url('../style/Gotham-Ultra.otf');
+}
+
+@font-face {
+	font-family: 'g_thin';
+	src: url('../style/Gotham-XLight.otf');
+} 
+*/
+
+@font-face {
+	font-family: 'g_medium';
+	src: url('../style/Gotham-Medium.otf');
+} 
+
+/*
+@font-face {
+	font-family: 'g_bold';
+	src: url('../style/GothamCond-Bold.otf');
+} 
+
+@font-face {
+	font-family: 'g_near';
+	src: url('../style/GothamCond-Book.otf');
+} 
+*/
+
+body {
+	background: url(../static/background.jpg);
+	background-color: #ebffe9;  
+	font: 82.5%;
+	font-family: g_light, Verdana, Sans-serif;
+	opacity: 0.98;
+	padding: 0px;
+	color: #4d4b46;
+	line-height: 150%;
+}
+
+#sidebar a {
+	opacity: 0;
+	-webkit-transition: .5s opacity;
+	-moz-transition: .5s opacity;
+	transition: .5s opacity;
+	font-size: .9em;
+	position: fixed;
+	top: 100px;
+	left: 5%;
+}
+
+#lang a {
+	position: fixed;
+	top: 1px;
+	font-size: small;
+	top: 30px;
+	left: 1%;
+	opacity: 0.3;
+}
+
+#print a {
+	position: fixed;
+	font-size: small;
+	top: 65px;
+	left: 1%;
+	opacity: 0.3;
+}
+
+#tit a {
+	
+	font-family: g_light, Verdana, Sans-serif;
+	font-style: italic;
+	opacity: .99;
+	color: #56a92d;
+	font-size: .9em;
+}
+
+
+a {
+	font-family: g_book, Verdana, Sans-serif;
+	color: #44a356;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #2d723f;
+}
+
+.info {
+	border-bottom: 1px dotted #4c4a45;
+	color: #4D4B45;
+}
+
+.info:hover {
+	color: #000;	
+}
+
+.selected {
+	background-color: #adf48d;
+}
+
+h1 {
+	font-family: g_mediem, Verdana, Sans-serif;
+	font-size: 2em;
+	font-weight: 700;
+	padding: 0px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+h2 {
+	font-family: g_mediem, Verdana, Sans-serif;
+	font-size: 1.3em;
+	text-align: center;
+	border-bottom: #000000 1px solid;
+	width: 920px;
+	margin: 30px auto 16px;
+}
+
+h3 {
+	font-family: g_light, Verdana, Sans-serif;
+	font-size: 1.1em;
+	text-align: center;
+	border-bottom: #000000 1px solid;
+	margin: 30px auto 16px;
+}
+
+b1 {
+	font-family: g_book, Verdana, Sans-serif;
+	opacity: .99;
+	padding: 0px;
+	color: #4d4b46;
+}
+
+b2 {
+	font-family: g_medium, Verdana, Sans-serif;
+	opacity: .99;
+	padding: 0px;
+	color: #4d4b46;
+}
+
+#subheader {
+	text-align:center;
+	padding: 0px;
+	margin: 10px auto;
+	font-size: 1em;
+}
+
+ul.noBullets {
+	list-style: none;
+	font-size: 1em;
+	margin: auto;
+}
+
+ul {
+	font-size: 1em;
+	margin: auto;
+	list-style: disc;
+}
+
+#container {
+	margin: auto;
+	width: 960px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+article {
+	display: block;
+	width: 935px;
+	margin-left: 0px;
+}
+
+article ul {
+	margin-bottom: 1em;
+}
+
+#technical, #objectives, #awards {
+	display: block;
+	width: 940px;
+	margin-left: 15px;
+}
+
+#contact {
+	display: block;
+	width: 690px;
+	font-size: .9em;
+	text-align: center;
+	margin: 10px auto;
+}
+
+.blockList {
+	line-height: 150%;
+	display: inline-block;
+	margin: 0px;
+	padding: 0;
+	width: 330px;
+}
+
+.blockList li {
+	display: inline-block;
+	width: 100%;
+	margin: inherit;
+}
+
+#interests {
+	margin-left: 40px;
+}
+
+#header {
+	color: #4D4B45;
+}
+
+#header:hover {
+	color: #000;	
+}
+
+.chromeframe {
+	text-align: center;
+}
+
+@media only screen and (max-width:1200px) {
+	#container {
+		width: 800px;
+	}
+
+	h2 {
+		margin: 30px 10% 15px 10%;
+		width: 80%;
+	}
+
+	article {
+		width: 655px;
+		margin-left: 60px;
+	}
+
+	#objectives, #technical, #awards {
+		width: 650px;
+		margin-left: 75px;
+	}
+
+	#contact {
+		width: 500px;
+	}
+
+	.blockList {
+		width: 200px;
+	}
+}
+
+@media only screen and (max-width:890px) {
+	#sidebar a {
+		left: 5px;
+	}
+
+}
+
+@media only screen and (max-width:810px) {
+	#container {
+		width: 100%;
+	}
+
+	article, #technical, #objectives, #awards {
+		width: 80%;
+	}
+
+}
+
+@media only screen and (max-width:500px) {
+	#sidebar a {
+		display: none;
+	}
+	
+	#contact {
+		width: 100%;
+	}
+
+	article, #technical, #objectives, #awards {
+		margin-left: 5px;
+		width: 95%;
+	}
+
+	ul {
+		padding-left: 30px;
+	}
+}
+
+@media print {
+	body {
+		background: #fff;
+		color: #272822;
+	}
+
+	a {
+		color: #272822 !important;
+		border-bottom: none !important;
+	}
+
+	#sidebar a {
+		display: none;
+	}
+	
+	#lang a {
+		display: none;
+	}
+	
+	#print a {
+		display: none;
+	}
+	
+	#tit a {
+		display: none;
+	}
+
+	.print:after { 
+		content: " (" attr(href) ")";
+		font-size: 90%;
+	}
+
+	.selected {
+		background-color: #fff;
+	}
+}
